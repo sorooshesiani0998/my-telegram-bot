@@ -10,7 +10,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_text = update.message.text
     await update.message.reply_text(f"دریافت شد: {user_text}\n\nممنون که بهم گفتی...")
 
-if name == 'main':
+if __name__ == '__main__':
     print("ربات شروع به کار کرد...")
     app = Application.builder().token(TOKEN).build()
     
