@@ -1,7 +1,7 @@
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
-TOKEN = "توکن_ربات_تو_اینجا"   # ←←← اینجا توکن واقعی خودت رو بذار
+TOKEN = "8995256501:AAG-vjaRNR6jcZOzMrMjYj3PzJsCc7AUZl4"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("سلام دوست من ❤️\n\nمن اینجام که باهات حرف بزنم. هر چی دلت خواست بگو.")
