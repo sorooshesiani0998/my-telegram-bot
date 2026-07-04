@@ -1,16 +1,16 @@
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
-TOKEN = "8995256501:AAG-vjaRNR6jcZOzMrMjYj3PzJsCc7AUZl4"
+TOKEN = "توکن_ربات_تو_اینجا"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("سلام دوست من ❤️\n\nمن اینجام که باهات حرف بزنم. هر چی دلت خواست بگو.")
+    await update.message.reply_text("سلام دوست من\n\nمن اینجام که باهات حرف بزنم. هر چی دلت خواست بگو.")
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_text = update.message.text
     await update.message.reply_text(f"دریافت شد: {user_text}\n\nممنون که بهم گفتی...")
 
-if __name__ == '__main__':
+if name == 'main':
     print("ربات شروع به کار کرد...")
     app = Application.builder().token(TOKEN).build()
     
